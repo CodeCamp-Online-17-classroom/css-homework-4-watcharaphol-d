@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+/* ================ Navbar ================ */
+.navbar {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex: wrap;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.navbar>a {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar>a:hover {
+    text-decoration: underline #FF6464;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 960px) {
+    .navbar {
+        justify-content: center;
+    }
+}
+
+/* ================ Section-1 ================ */
+.sec1-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 50px;
+    flex-wrap: wrap-reverse;
+}
+
+.sec1-con>div:nth-child(1) {
+    width: 500px;
+}
+
+.sec1-con>div:nth-child(2) {
+    width: 300px;
+    margin: 0 30px 40px;
+}
+
+.sec1-con .avatar-pic {
+    height: 243px;
+    width: 243px;
+    background: url(./../PIC/avatar.png) no-repeat;
+    background-size: contain;
+    filter: drop-shadow(-5px 10px 0px #EDF7FA);
+    margin: auto;
+}
+
+.sec1-con>div:nth-child(1)>h1 {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 960px) {
+    .sec1-con>div:nth-child(1) {
+        text-align: center;
+    }
+}
+
+.sec1-con>div:nth-child(1)>p {
+    margin: 30px 0px;
+}
+
+.sec1-con>div:nth-child(1)>a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #FF6464;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sec1-con>div:nth-child(1)>a:hover {
+    color: #FF6464;
+    background-color: white;
+    outline: 1px solid #FF6464;
+    font-weight: 500;
+}
+
+/* ================ Section-2 ================ */
+.sec2-con {
+    width: 100%;
+    background-color: #EDF7FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+}
+
+@media (max-width: 960px) {
+    .sec2-con {
+        padding: 25px 25px;
+    }
+}
+
+.sec2-con>div:nth-child(1) {
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sec2-con>div:nth-child(1)>a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: #c9dadf99;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sec2-con>div:nth-child(1)>a:hover {
+    background-color: #889da4;
+    color: white;
+}
+
+.sec2-con>div:nth-child(2) {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.sec2-con>div:nth-child(2)>.card-1,
+.sec2-con>div:nth-child(2)>.card-2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 415px;
+    flex-grow: 1;
+    margin: 10px 0px;
+    padding: 30px;
+}
+
+.sec2-con>div:nth-child(2)>.card-1>div *,
+.sec2-con>div:nth-child(2)>.card-2>div * {
+    margin: 20px 0px;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.sec2-con>div:nth-child(2)>.card-1>div>p:nth-child(2),
+.sec2-con>div:nth-child(2)>.card-2>div>p:nth-child(2) {
+    margin-left: 15px;
+    border-left: 1.5px solid black;
+    padding-left: 15px;
+}
+
+@media (max-width: 960px) {
+
+    .sec2-con>div:nth-child(2)>.card-1>div>p:nth-child(2),
+    .sec2-con>div:nth-child(2)>.card-2>div>p:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .sec2-con>div:nth-child(2)>.card-1>div>p:nth-child(1),
+    .sec2-con>div:nth-child(2)>.card-2>div>p:nth-child(1) {
+        margin-bottom: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* ================ Section-3 ================ */
+.sec3-con {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+}
+
+@media (max-width: 960px) {
+    .sec3-con {
+        padding: 25px 25px;
+    }
+}
+
+.sec3-con>div:nth-child(1) {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sec3-con>div:nth-child(2) {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.sec3-con>div:nth-child(2)>hr {
+    border: 1px solid #E0E0E0;
+}
+
+.sec3-con>div:nth-child(2) .s3-card1,
+.sec3-con>div:nth-child(2) .s3-card2,
+.sec3-con>div:nth-child(2) .s3-card3 {
+    margin: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.sec3-con>div:nth-child(2) .s3-card1 .s3-pic1 {
+    height: 180px;
+    width: 246px;
+    background: url(./../PIC/Rectangle-30.png) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin: 20px auto;
+}
+
+.sec3-con>div:nth-child(2) .s3-card2 .s3-pic2 {
+    height: 180px;
+    width: 246px;
+    background: url(./../PIC/Rectangle\-32.png) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin: 20px auto;
+}
+
+.sec3-con>div:nth-child(2) .s3-card3 .s3-pic3 {
+    height: 180px;
+    width: 246px;
+    background: url(./../PIC/Rectangle\-34.png) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin: 20px auto;
+}
+
+.sec3-con>div:nth-child(2) .s3-card1>div:nth-child(2),
+.sec3-con>div:nth-child(2) .s3-card2>div:nth-child(2),
+.sec3-con>div:nth-child(2) .s3-card3>div:nth-child(2) {
+    width: 60%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0px auto;
+}
+
+.sec3-con>div:nth-child(2) .s3-card1>div:nth-child(2)>div,
+.sec3-con>div:nth-child(2) .s3-card2>div:nth-child(2)>div,
+.sec3-con>div:nth-child(2) .s3-card3>div:nth-child(2)>div {
+    display: flex;
+    align-items: baseline;
+    padding: 15px 0px;
+    color: #8695A4;
+}
+
+.sec3-con>div:nth-child(2) .s3-year {
+    color: white;
+    background-color: #142850;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.sec3-con>div:nth-child(2) .s3-year:hover {
+    color: #142850;
+    background-color: white;
+    font-weight: 500;
+    outline: 2px solid #142850;
+}
+
+/* ================ Footer ================ */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+footer>div {
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+footer>div a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+footer>div a:hover {
+    color: #8695A4;
+    ;
+}
